@@ -1,0 +1,89 @@
+.profile{
+    padding: 32px 0 90px;
+    .container{
+        display: flex;
+        gap: 30px;
+    }
+    &-nav{
+        display: flex;
+        flex-direction: column;
+        width: 23%;
+        border-right: 1px solid #f2f2f2;
+        .profile-item{
+            cursor: pointer;
+            &:hover{
+                background-color: #c9c9c966;
+            }
+        }
+    }
+    &-item{
+        display: flex;
+        align-items: center;
+        border-radius: 6px;
+        gap: 10px;
+        width: 100%;
+        padding: 20px 10px;
+        transition: all 0.3s ease;
+    }
+    &-icon{
+        @extend %fcc;
+        border-radius: 50%;
+        background: #f7f7f7;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+        svg{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &-info{
+        h4{
+            color: $category;
+            @include font(500, 14, 1.5);
+        }
+    }
+    &-main{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 75%;
+    }
+    .user-info{
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        &-header{
+            @extend %fcs;
+            padding: 15px;
+            border-bottom: 1px solid #f2f2f2;
+            button{
+                @extend %fcc;
+                background: $userInfoBtn;
+                border: 1px solid $userInfoBtn;
+                border-radius: 6px;
+                color: #fff;
+                cursor: pointer;
+                @include font(500, 16, 1.2);
+                padding: 12px 24px;
+                transition: all 0.3s ease;
+                &:hover{
+                    background: #fff;
+                    color: $userInfoBtn;
+                }
+            }
+        }
+        &-main{
+            padding: 20px;
+            h4{
+                color: $category;
+                @include font(500, 14, 1.5);
+                margin-bottom: 14px;
+            }
+            h5{
+                color: #626364;
+                @include font(400, 14, 1.5);
+            }
+        }
+    }
+}

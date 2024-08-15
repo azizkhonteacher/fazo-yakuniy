@@ -1,0 +1,54 @@
+.fazo__hero_wrapper {
+  background-color: $default-bgc;
+  // swiper
+  .fazo__hero_swiper-wrap {
+    display: block;
+    width: 100%;
+    margin-top: 36px;
+    position: relative;
+
+    .fazo__hero_swiper {
+      display: flex;
+      width: 100%;
+      position: relative;
+      height: 660px;
+      border: 1px solid #f2f2f2;
+      border-radius: 5px;
+    }
+    .fazo__hero_swiper-img {
+      display: flex;
+      width: 100%;
+      user-select: none;
+      img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+    }
+    // btn's
+    .hero__swiper-btn {
+      @extend %fcc;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 1px solid #e0e0e0;
+      background-color: #f7f7f7;
+      padding: 15px 17px 13px 15px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+    }
+    .h-next-btn {
+      transform: rotate(180deg) translateY(50%);
+      right: 22px;
+    }
+    .h-prev-btn {
+      left: 22px;
+    }
+  }
+}

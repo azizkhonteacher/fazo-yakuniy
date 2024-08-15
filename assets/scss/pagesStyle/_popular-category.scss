@@ -1,0 +1,38 @@
+.popular-category {
+    padding: 88px 0 66px;
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    &__title {
+      width: 100%;
+      margin-bottom: 28px;
+      color: #000;
+      @include font(500, 24, 0.9);
+    }
+    .popular-card{
+      user-select: none;
+      display: flex;
+      border: 1px solid #f2f2f2;
+      border-radius: 5px;
+      color: $category;
+      padding: 18px;
+      max-width: 360px;
+      width: 100%;
+      justify-content: space-between;
+      gap: 10px;
+      color: $category;
+    }
+    .category-name{
+      @include font(400, 20, 1.2);
+      padding: 5px;
+    }
+    .category-img{
+      display: flex;
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+  }
+  
